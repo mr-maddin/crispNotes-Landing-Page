@@ -35,21 +35,6 @@ Dies ist ein Projekt, das mit **Vite** und **Tailwind CSS** erstellt wurde. Ziel
 
 ---
 
-## 📂 Projektstruktur
-
-rispnote-landingpage/
-│── public/ → Statische Dateien (Logo, Bilder, Icons)
-│── src/
-│ ├── assets/ → Bilder, Illustrationen, Icons
-│ ├── styles/ → Tailwind + Custom CSS
-│ ├── main.js → JavaScript Logik
-│ └── index.html → Hauptseite
-│── package.json → Projektkonfiguration
-│── tailwind.config.js → Tailwind Setup
-│── README.md → Projektdokumentation
-
----
-
 ## ✨ Features
 
 - Responsives Layout (Mobile, Tablet, Desktop)

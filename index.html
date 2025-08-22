@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/feather.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>CrispNotes</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="z-50 border-b border-gray-200 sticki bg-white-80 backdrop-blur">
+      <nav class="flex items-center max-w-6xl px-4 mx-auto justify-between md:justify-evenly">
+        <img
+          class="w-[80px] ml-10 mt-5 mb-5 rounded-xl"
+          src="public/images/CrispNotes Logo.png"
+          alt="Logo von CrispNotes"
+        />
+        <div class="navLinks hidden md:inline">
+          <ul class="flex gap-5 text-indigo-600">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#preise">Preise</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="menuBtns z-10 cursor-pointer md:hidden transition duration-600">
+          <img
+            id="menuBtn"
+            class="absolute right-15 top-10 z-10"
+            src="src/assets/icons/menu_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+            alt=""
+          />
+          <img
+            id="menuCloseBtn"
+            class="absolute right-15 top-10 hidden"
+            src="src/assets/icons/close_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+            alt=""
+          />
+        </div>
+        <div class="navLinksMobile">
+          <ul
+            id="navItems"
+            class="absolute md:hidden bg-cyan-500 opacity-80 rounded-bl-3xl w-[40%] right-0 top-0 h-80 transition duration-600 ease-out translate-x-[100%] text-white"
+          >
+            <div class="relative mt-30 ml-15">
+              <li class="pb-2"><a href="#features">Features</a></li>
+              <li class="pb-2"><a href="#preise">Preise</a></li>
+              <li class="pb-2"><a href="#faq">FAQ</a></li>
+              <li class="pb-2"><a href="#">Kontakt</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="mb-8 hero">
+      <main class="flex flex-col items-center">
+        <h1 class="text-[6rem]/19 pt-8 text-center font-bold text-indigo-600 tracking-tighter uppercase">
+          Crisp<br />Notes
+        </h1>
+        <div class="line h-[1px] w-75 bg-indigo-600 my-8"></div>
+        <h2 class="font-medium text-indigo-700 text3xl">Die All-in-One Lösung für Notizen</h2>
+        <img class="mt-8 h-80" src="/images/appMockUp.webp" alt="App Mock-Up der Bedienoberfläche" />
+        <button
+          class="p-4 mt-8 text-lg transition bg-indigo-600 shadow-md cursor-pointer w-50 text-cyan-500 rounded-xl hover:bg-indigo-700 duration-600 hover:scale-102"
+        >
+          Kostenlos starten
+        </button>
+      </main>
+    </section>
+    <section id="features" class="bg-cyan-500">
+      <div class="max-w-6xl px-4 py-16 mx-auto w-[85%]">
+        <h2 class="text-3xl font-semibold text-center">Warum CrispNotes?</h2>
+        <div class="grid grid-cols-1 gap-8 mt-12 md:grid-cols-2 lg:grid-cols-3">
+          <div class="p-6 transition bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-102 duration-600">
+            <h3 class="text-xl font-semibold">Blitzschnelle Suche</h3>
+            <p class="mt-2 text-gray-500">Finde jede Notiz in Millisekunden.</p>
+          </div>
+          <div class="p-6 transition bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-102 duration-600">
+            <h3 class="text-xl font-semibold">Überall erreichbar</h3>
+            <p class="mt-2 text-gray-500">Dank sicherem Cloud-Speicher.</p>
+          </div>
+          <div class="p-6 transition bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-102 duration-600">
+            <h3 class="text-xl font-semibold">Individualisierbar</h3>
+            <p class="mt-2 text-gray-500">Nach deinem Geschmack an.</p>
+          </div>
+          <div class="p-6 transition bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-102 duration-600">
+            <h3 class="text-xl font-semibold">Export Funktion</h3>
+            <p class="mt-2 text-gray-500">In PDF, JPG, oder als Text-Datei.</p>
+          </div>
+          <div class="p-6 transition bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-102 duration-600">
+            <h3 class="text-xl font-semibold">Anlegen von Kategorien</h3>
+            <p class="mt-2 text-gray-500">Behalte stets den Überblick.</p>
+          </div>
+          <div class="p-6 transition bg-white shadow-lg rounded-xl hover:shadow-xl hover:scale-102 duration-600">
+            <h3 class="text-xl font-semibold">Erinnerungsfunktion</h3>
+            <p class="mt-2 text-gray-500">Verpasse nie wieder Wichtiges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="preise" class="mx-auto flex flex-col w-[85%] items-center my-8 md:w-full">
+      <div class="grid max-w-6xl grid-cols-1 gap-6 px-4 mx-auto md:grid-cols-3">
+        <div class="flex flex-col justify-between p-8 shadow-sm h-90 rounded-xl">
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold">Free</h3>
+            <p class="text-3xl font-semibold">0€</p>
+          </div>
+          <div>
+            <div class="flex gap-2">
+              <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p class="font-gray-500">Blitzschnelle Suche</p>
+            </div>
+            <div class="flex gap-2">
+              <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p class="font-gray-500">Cloud-Speicher</p>
+            </div>
+          </div>
+          <a
+            class="inline-flex justify-center w-full px-4 py-3 mt-6 transition border border-gray-300 cursor-pointer rounded-xl hover:scale-102 hover:bg-gray-50 duration-600"
+            >Starten</a
+          >
+        </div>
+        <div>
+          <div class="flex flex-col justify-between p-8 text-white scale-105 bg-indigo-600 shadow-md h-90 rounded-xl">
+            <div class="flex flex-col">
+              <h3 class="text-xl font-semibold">Pro</h3>
+              <p class="text-3xl font-semibold">7€/Monat</p>
+            </div>
+            <div>
+              <div class="flex gap-2">
+                <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+                <p class="font-gray-500">Export-Funktion</p>
+              </div>
+              <div class="flex gap-2">
+                <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+                <p class="font-gray-500">Erinnerungen</p>
+              </div>
+              <div class="flex gap-2">
+                <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+                <p class="font-gray-500">24/7 Support</p>
+              </div>
+            </div>
+            <a
+              class="inline-flex justify-center w-full px-4 py-3 mt-6 text-indigo-700 transition bg-white cursor-pointer rounded-xl hover:scale-102 hover:bg-gray-100 duration-600"
+              >Kostenlos testen</a
+            >
+          </div>
+        </div>
+        <div class="flex flex-col justify-between p-8 bg-white shadow-sm h-90 rounded-xl">
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold">Team</h3>
+            <p class="text-3xl font-semibold">15€/User</p>
+          </div>
+          <div>
+            <div class="flex gap-2 mt-8">
+              <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p class="font-gray-500">Export-Funktion</p>
+            </div>
+            <div class="flex gap-2">
+              <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p class="font-gray-500">Erinnerungen</p>
+            </div>
+            <div class="flex gap-2">
+              <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p class="font-gray-500">24/7 Support</p>
+            </div>
+            <div class="flex gap-2">
+              <img class="h-7" src="src/assets/icons/check_24dp_75FB4C_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p class="font-gray-500">Benutzer-<br />verwaltung</p>
+            </div>
+          </div>
+          <a
+            class="inline-flex justify-center w-full px-4 py-3 mt-6 transition border border-gray-300 cursor-pointer rounded-xl hover:scale-102 hover:bg-gray-50 duration-600"
+            >Anfragen</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="my-20 testimonials grid grid-cols-1 gap-6 mx-auto md:w-180 lg:max-w-[80%]">
+      <div
+        class="testimonial-card flex flex-col items-center bg-white rounded-xl w-[70%] mx-auto py-4 md:flex-row md:px-4 md:gap-10 md:items-start md:h-40 md:w-[100%]"
+      >
+        <img
+          class="rounded-full h-25 w-25 md:my-auto"
+          src="public/images/testim-01.jpg"
+          alt="Portrait einer Person namens Josephine Doe"
+        />
+        <h4 class="text-indigo-600 text-center leading-4 pt-4 md:text-left md:my-auto">
+          Josephine Doe <br /><span class="text-gray-500 text-sm text-center md:pt-3">Influencer</span>
+        </h4>
+        <p class="text-center py-4 w-[80%] md:text-left md:my-auto">
+          Die App passt perfekt in meinen Workflow. Ohne könnte ich mir die Arbeit nich mehr vorstellen! 🤗
+        </p>
+      </div>
+      <div
+        class="testimonial-card flex flex-col items-center bg-white rounded-xl w-[70%] mx-auto py-4 md:flex-row md:px-4 md:gap-10 md:items-start md:h-40 md:w-[100%]"
+      >
+        <img
+          class="rounded-full h-25 w-25 md:my-auto"
+          src="public/images/testim-02.jpg"
+          alt="Portrait einer Person namens John Doe"
+        />
+        <h4 class="text-indigo-600 text-center leading-4 pt-4 md:text-left md:my-auto">
+          John Doe <br /><span class="text-gray-500 text-sm text-center">Software Engeneer</span>
+        </h4>
+        <p class="text-center py-4 w-[80%] md:text-left md:my-auto">
+          Super, um für's Programmieren meine Notizen zu verwalten 💻👍
+        </p>
+      </div>
+      <div
+        class="testimonial-card flex flex-col items-center bg-white rounded-xl w-[70%] mx-auto py-4 md:flex-row md:px-4 md:gap-10 md:items-start md:h-40 md:w-[100%]"
+      >
+        <img
+          class="rounded-full h-25 w-25 md:my-auto"
+          src="public/images/testim-03.jpg"
+          alt="Portrait einer Person namens Justin Smith"
+        />
+        <h4 class="text-indigo-600 text-center leading-4 pt-4 md:text-left md:my-auto">
+          Justin Smith <br /><span class="text-gray-500 text-sm text-center">Human Resources</span>
+        </h4>
+        <p class="text-center py-4 w-[80%] md:text-left md:my-auto">
+          Ich kann die App wunderbar in meinen Arbeits-Alltag integrieren 😁
+        </p>
+      </div>
+    </section>
+    <section id="faq" class="FAQ">
+      <div class="w-[80%] mx-auto">
+        <div class="FAQ-Card flex flex-col mb-4">
+          <div class="border-b border-gray-200 flex justify-between pb-4">
+            <h4>Ist CrispNote wirklich kostenlos?</h4>
+            <img
+              class="w-6 plusBtn cursor-pointer"
+              src="src/assets/icons/add_circle_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Plus Button"
+            />
+            <img
+              class="w-6 minusBtn cursor-pointer hidden"
+              src="src/assets/icons/cancel_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Cancel Button"
+            />
+          </div>
+          <div class="faqBody duration-600 hidden">
+            <p class="mt-4 text-justify mb-4">
+              Ja! CrispNote bietet eine kostenlose Basisversion mit allen wichtigen Funktionen. Für erweiterte Features
+              wie Team-Sharing oder unbegrenzten Speicherplatz kannst du jederzeit auf ein Abo upgraden.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ-Card flex flex-col mb-4">
+          <div class="border-b border-gray-200 flex justify-between pb-4">
+            <h4>Kann ich meine Notizen auf mehreren Geräten nutzen?</h4>
+            <img
+              class="w-6 plusBtn cursor-pointer"
+              src="src/assets/icons/add_circle_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Plus Button"
+            />
+            <img
+              class="w-6 minusBtn cursor-pointer hidden"
+              src="src/assets/icons/cancel_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Cancel Button"
+            />
+          </div>
+          <div class="faqBody duration-600 hidden">
+            <p class="mt-4 text-justify">
+              Absolut. Deine Notizen werden automatisch synchronisiert und sind auf Smartphone, Tablet und Desktop
+              jederzeit verfügbar.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ-Card flex flex-col mb-4">
+          <div class="border-b border-gray-200 flex justify-between pb-4">
+            <h4>Sind meine Daten bei CrispNotes sicher?</h4>
+            <img
+              class="w-6 plusBtn cursor-pointer"
+              src="src/assets/icons/add_circle_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Plus Button"
+            />
+            <img
+              class="w-6 minusBtn cursor-pointer hidden"
+              src="src/assets/icons/cancel_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Cancel Button"
+            />
+          </div>
+          <div class="faqBody duration-600 hidden">
+            <p class="mt-4 text-justify">
+              Ja, deine Daten sind durch Ende-zu-Ende-Verschlüsselung geschützt. Wir legen höchsten Wert auf Datenschutz
+              und Sicherheit.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ-Card flex flex-col mb-4">
+          <div class="border-b border-gray-200 flex justify-between pb-4">
+            <h4>Brauche ich eine Internetverbindung, um CrispNotes zu nutzen?</h4>
+            <img
+              class="w-6 plusBtn cursor-pointer"
+              src="src/assets/icons/add_circle_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Plus Button"
+            />
+            <img
+              class="w-6 minusBtn cursor-pointer hidden"
+              src="src/assets/icons/cancel_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Cancel Button"
+            />
+          </div>
+          <div class="faqBody duration-600 hidden">
+            <p class="mt-4 text-justify">
+              Nein, du kannst auch offline Notizen erstellen. Sobald du wieder online bist, werden deine Inhalte
+              automatisch synchronisiert.
+            </p>
+          </div>
+        </div>
+        <div class="FAQ-Card flex flex-col mb-4">
+          <div class="border-b border-gray-200 flex justify-between pb-4">
+            <h4>Kann ich CrispNote im Team verwenden?</h4>
+            <img
+              class="w-6 plusBtn cursor-pointer"
+              src="src/assets/icons/add_circle_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Plus Button"
+            />
+            <img
+              class="w-6 minusBtn cursor-pointer hidden"
+              src="src/assets/icons/cancel_32dp_4F46E5_FILL0_wght400_GRAD0_opsz40.svg"
+              alt="Cancel Button"
+            />
+          </div>
+          <div class="faqBody duration-600 hidden">
+            <p class="mt-4 text-justify">
+              Ja! Mit unserem Team-Plan kannst du Notizen teilen, gemeinsam bearbeiten und Aufgaben verteilen – perfekt
+              für Projekte und Zusammenarbeit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="flex flex-col h-40 justify-evenly">
+      <div class="navLinks">
+        <ul class="flex justify-center gap-5 text-indigo-600">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Preise</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-4 mx-auto">
+        <img src="src/assets/icons/facebook.png" alt="Facebook Logo" />
+        <img src="src/assets/icons/instagram.png" alt="Instagram Logo" /><img
+          src="src/assets/icons/tiktok.png"
+          alt=""
+        />
+      </div>
+      <p class="text-center text-indigo-600">&copy; 2025 by CrispNotes</p>
+    </footer>
+    <script type="module" src="/src/assets/main.js"></script>
+  </body>
+</html>
